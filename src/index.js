@@ -8,6 +8,10 @@ dotenv.config({
   path: "./env",
 });
 
+app.get("/", (req, res) => {
+  res.send("Testing");
+});
+
 // As we use async for connectDB so we have then and catch
 connectDB()
   .then(() => {
