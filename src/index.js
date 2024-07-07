@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 const port = process.env.PORT || 5500;
 
 dotenv.config({
-  path: "./env",
+  path: "./.env",
 });
 
 app.get("/", (req, res) => {
